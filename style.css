@@ -57,3 +57,13 @@ body{
     width: 200px;
     justify-content: space-evenly;
 }
+
+#strike-button{
+    border:none;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#c02425,#f0cb35);
+    font-size: large;
+    font-weight: bold;
+    /* color: transparent; */
+    width: 300px;
+}
