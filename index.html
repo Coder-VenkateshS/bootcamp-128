@@ -6,13 +6,14 @@
     <title>Document</title>
     <!-- Include style sheet -->
     <link rel="stylesheet" href="./style.css">
+  
 </head>
 <body>
 <div class="container">
    <div class="row">
        <div class="col">
            <img class="profile-icon" src="./assets/csk.png" alt="" height="150px" width="150px"/>
-           <span class="name" id="team-1-name">CSK</span>
+           <span class="name" id="team-1-name"></span>
            <div class="row round-runs" id="team-1-round-runs">
                <span class="col">-</span>
                <span class="col">-</span>
@@ -24,14 +25,14 @@
        </div>
        <div class="col">
            <div class="row score">
-               <span id="team-1-score">0</span>
+               <span id="team-1-score"></span>
                <span>-</span>
-               <span id="team-2-score">0</span>
+               <span id="team-2-score"></span>
            </div>
        </div>
        <div class="col">    
              <img class="profile-icon" src="./assets/MI.png" alt="" height="150px" width="150px"/>
-        <span class="name" id="team-2-name">MI</span>
+        <span class="name" id="team-2-name"></span>
         <div class="row round-runs" id="team-2-round-runs">
             <span class="col">-</span>
             <span class="col">-</span>
@@ -43,9 +44,11 @@
     </div>
    </div>
    <div class="row">
-<button id="strike-button">BAT</button>
+<button id="strike-button" onclick="handleStrikeButtonClick()">BAT</button>
    </div>
    <div class="row" id="result" hidden>  </div>
 </div>
+<!-- Include your js file -->
+<script src="./app.js"></script>
 </body>
 </html>
